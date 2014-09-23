@@ -1,4 +1,4 @@
-var mbaas = require('fh-mbaas-api');
+var mbaas = require('fh-mbaas-express');
 var express = require('express');
 var cors = require('cors');
 //var mainjs = require('main.js');
