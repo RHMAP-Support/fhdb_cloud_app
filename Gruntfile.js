@@ -46,7 +46,9 @@ module.exports = function(grunt) {
       options : {},
       // environment variables - see https://github.com/jsoverson/grunt-env for more information
       local: {
-        FH_USE_LOCAL_DB: true
+        FH_USE_LOCAL_DB: true,
+        FH_PORT: 8002,
+        APP_URL: 'http://localhost:8001'
       }
     },
     'node-inspector': {
