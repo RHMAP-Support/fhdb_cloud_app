@@ -27,11 +27,11 @@ app.use('/', function(req, res) {
   res.end('Your Cloud App is Ruuuunning.....');
 });
 
+app.use('/fhdb', require('./lib/fhdb.js')());
+
 app.use('/bd', function(req, res) {
   res.end('bd here .....');
 });
-
-app.use('/fhdb', require('./lib/fhdb.js')());
 
 // Important that this is last!
 app.use(mbaas.errorHandler());
