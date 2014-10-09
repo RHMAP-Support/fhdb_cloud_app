@@ -29,6 +29,8 @@ app.use('/', function(req, res) {
   res.end('Your Cloud App is Ruuuunning.....');
 });
 
+app.use('/fhdb', require('./lib/fhdb.js')());
+
 app.use('/bd', function(req, res) {
   res.end('bd here .....');
 });
