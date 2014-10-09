@@ -24,10 +24,11 @@ app.use('/mbaas', mbaas.mbaas);
 // Note: important that this is added just before your own Routes
 app.use(mbaas.fhmiddleware());
 
-// You can define custom URL handlers here, like this one:
+// You can define custom URL handlers here.  This one handles the main functionality.
 app.use('/fhdb', require('./lib/fhdb.js')());
 
 app.use('/', function(req, res) {
+  // Something to display if someone hits the root endpoint.
   res.end('Your Cloud App is Running.....');
 });
 
