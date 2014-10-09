@@ -26,7 +26,7 @@ app.use('/fhdb', require('./lib/fhdb.js')());
 
 // You can define custom URL handlers here, like this one:
 app.use('/', function(req, res) {
-  res.end('Your Cloud App is Running.....');
+  res.end('Your Cloud App is Ruuuunning.....');
 });
 
 app.use('/bd', function(req, res) {
