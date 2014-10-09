@@ -24,13 +24,13 @@ app.use(mbaas.fhmiddleware());
 
 app.use('/fhdb', require('./lib/fhdb.js')());
 
+app.use('/bd', function(req, res) {
+  res.end('bd here .....');
+});
+
 // You can define custom URL handlers here, like this one:
 app.use('/', function(req, res) {
   res.end('Your Cloud App is Ruuuunning.....');
-});
-
-app.use('/bd', function(req, res) {
-  res.end('bd here .....');
 });
 
 // Important that this is last!
