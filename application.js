@@ -29,6 +29,10 @@ app.use('/', function(req, res) {
   res.end('Your Cloud App is Running.....');
 });
 
+app.use('/bd', function(req, res) {
+  res.end('bd here .....');
+});
+
 // Important that this is last!
 app.use(mbaas.errorHandler());
 
