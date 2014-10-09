@@ -32,7 +32,7 @@ app.use('/bd', function(req, res) {
 
 // You can define custom URL handlers here, like this one:
 app.use('/', function(req, res) {
-  console.log(req.body);
+//  console.log(req.body);
   res.end('Your Cloud App is Ruuuunning.....');
 });
 
