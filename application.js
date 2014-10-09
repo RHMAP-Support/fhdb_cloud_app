@@ -7,6 +7,8 @@ var express = require('express');
 // Allow cross-origin resource sharing, see https://www.npmjs.org/package/cors
 var cors = require('cors');
 
+var util = require('util');
+
 // Securable endpoints: list the endpoints which you want to make securable here
 var securableEndpoints = [];
 
@@ -30,6 +32,7 @@ app.use('/bd', function(req, res) {
 
 // You can define custom URL handlers here, like this one:
 app.use('/', function(req, res) {
+  console.log(util.inspect(req.body));
   res.end('Your Cloud App is Ruuuunning.....');
 });
 
