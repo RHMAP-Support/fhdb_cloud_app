@@ -32,7 +32,7 @@ app.use('/fhdb', require('./lib/fhdb.js')());
 //});
 
 app.use('/', function(req, res) {
-  res.end('Your Cloud App is Ruuuunning.....');
+  res.end('Your Cloud App is Running.....');
 });
 
 // Important that this is last!
