@@ -20,21 +20,8 @@ This is a cloud app that interfaces with a seperate cloud app that maintains a M
 
 + Response 200 (application/json)
     + Body
-            { "msg" : " {
-                            "msg":{"count":1,
-                                    "list":[
-                                            {
-                                                "type":"fhdbExample",
-                                                "guid":"5436aacc0f9f20870d000446",
-                                                "fields":{
-                                                            "firstname":"jim",
-                                                            "lastname":"jones",
-                                                            "country":"Ireland",
-                                                            "phone":"123456"
-                                                          }
-                                            },
-                                    }
-                        }" 
+            {
+              msg: "{"msg":{"count":8,"list":[{"type":"fhdbExample","guid":"543e77d56d5fd8880d0001ed","fields":{"firstname":"jack","lastname":"smith","country":"dbland","phone":"987654"}},{"type":"fhdbExample","guid":"543e77d76d5fd8880d0001ee","fields":{"firstname":"jack","lastname":"smith","country":"dbland","phone":"987654"}},{"type":"fhdbExample","guid":"543e77d90f9f20870d000522","fields":{"firstname":"jack","lastname":"smith","country":"dbland","phone":"987654"}},{"type":"fhdbExample","guid":"543e77db6d5fd8880d0001ef","fields":{"firstname":"jack","lastname":"smith","country":"dbland","phone":"987654"}},{"type":"fhdbExample","guid":"543e77e76d5fd8880d0001f0","fields":{"firstname":"jim","lastname":"jones","country":"Ireland","phone":"123456"}},{"type":"fhdbExample","guid":"543e77e80f9f20870d000523","fields":{"firstname":"jim","lastname":"jones","country":"Ireland","phone":"123456"}},{"type":"fhdbExample","guid":"543e77ea6d5fd8880d0001f1","fields":{"firstname":"jim","lastname":"jones","country":"Ireland","phone":"123456"}},{"type":"fhdbExample","guid":"543e77ec0f9f20870d000524","fields":{"firstname":"jim","lastname":"jones","country":"Ireland","phone":"123456"}}]}}"
             }
 
 # addMrJones [/fhdb/addMrJones]
@@ -47,14 +34,14 @@ This is a cloud app that interfaces with a seperate cloud app that maintains a M
 
 + Request (application/json)
     + Body
-            {
-
+            { 
+              "form" : { "firstname" : "jim", "lastname" : "jones", "country" : "Ireland", "phone" : "123456" } 
             }
 
 + Response 200 (application/json)
     + Body
             {
-              msg: "{"msg":{"type":"fhdbExample","guid":"543e5f760f9f20870d000517","fields":{"firstname":"jim","lastname":"jones","country":"Ireland","phone":"123456"}}}"
+              msg: "{"msg":{"type":"fhdbExample","guid":"543e7a170f9f20870d000525","fields":{"firstname":"jim","lastname":"jones","country":"Ireland","phone":"123456"}}}"
             }
 
 # addMrSmith [/fhdb/addMrSmith]
@@ -68,7 +55,7 @@ This is a cloud app that interfaces with a seperate cloud app that maintains a M
 + Request (application/json)
     + Body
             {
-
+              "form" : { "firstname" : "jack", "lastname" : "smith", "country" : "dbland", "phone" : "987654" }
             }
 
 + Response 200 (application/json)
