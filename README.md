@@ -14,9 +14,7 @@ This is a cloud app that interfaces with a seperate cloud app that maintains a M
 
 + Request (application/json)
     + Body
-            {
-
-            }
+            {}
 
 + Response 200 (application/json)
     + Body
